@@ -2,12 +2,12 @@
 
 var mongoose = require('mongoose');
 
-var categoryModel = function() {
-    var categorySchema = mongoose.Schema({
-        name: String
-    });
+var categoryModel = function(){
+	var categorySchema = mongoose.Schema({
+		name: String
+	});
 
-    return mongoose.model('Category', categorySchema);
+	return mongoose.model('Category', categorySchema);
 };
 
 module.exports = new categoryModel();
